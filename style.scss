@@ -72,11 +72,6 @@ a:hover {
         }
     }
 }
-.info h1:hover {
-    transform: scale(1.1);
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-}
 .organise {
     text-align: center;
     h1 {
@@ -102,11 +97,6 @@ a:hover {
         }
     }
 }
-.organise h1:hover {
-    transform: scale(1.1);
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-}
 
 .offer {
     margin-top: 35px;
@@ -131,11 +121,6 @@ a:hover {
     }
 }
 .offer-item img:hover {
-    transform: scale(1.1);
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-}
-.offer h1:hover {
     transform: scale(1.1);
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
@@ -171,11 +156,6 @@ a:hover {
             color: rgb(212, 1, 1);;
         }
     }
-}
-.events h1:hover {
-    transform: scale(1.1);
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
 }
 .wave {
     margin-top: 45px;
@@ -242,11 +222,6 @@ a:hover {
           }
       }
   }
-  .section-title:hover {
-    transform: scale(1.1);
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-  }
 
   .gallery {
       text-align: center;
@@ -283,18 +258,11 @@ a:hover {
           margin-bottom: 10px;
       }
   }
-  .contact h1:hover {
-      transform: scale(1.1);
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-  }
   .map {
       width: 100%;
       height: 300px;
       margin-top: 40px;
-  }
-  .mapper p {
-      margin-bottom: 120px;
+      margin-bottom: 250px;
   }
   .bottom-logo {
     margin-left: 20px;
