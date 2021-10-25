@@ -28,7 +28,7 @@ a:hover {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   bottom: initial;
-  top: 70%;
+  top: 79%;
 }
 
 .carousel-item img {
@@ -213,6 +213,10 @@ a:hover {
 .events .events-item {
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.events .events-item h4 {
+  padding: 0 15px 0 15px;
 }
 
 .events .events-item p {
