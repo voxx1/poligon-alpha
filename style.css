@@ -214,10 +214,6 @@ a:hover {
 
 .parallax {
   position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,23 +223,21 @@ a:hover {
 }
 
 .img1 {
-  background-image: url("images/paralax.jpg");
+  background-image: url("images/poligon3.jpg");
   height: 300px;
   -o-object-fit: cover;
   object-fit: cover;
-  background-attachment: fixed;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   margin: 20px 0 20px 0;
 }
 
 .img2 {
-  background-image: url("images/paralax2.jpg");
+  background-image: url("images/poligon2.jpg");
   height: 300px;
   -o-object-fit: cover;
   object-fit: cover;
-  background-attachment: fixed;
-  background-position: center center;
+  background-position: bottom;
   background-size: cover;
   margin: 20px 0 20px 0;
 }
@@ -408,10 +402,10 @@ div#gallery-desktop figure img {
   src: url(font/FabrikatRegular.otf);
 }
 
-@media (max-width: 326px) {
+@media (max-width: 360px) {
   .wrapper {
     margin: 0 auto;
-    width: 326px;
+    width: 360px;
   }
 }
 
@@ -542,6 +536,9 @@ div#gallery-desktop figure img {
   .gallery {
     display: none;
   }
+  .img2 {
+    height: 500px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -576,6 +573,12 @@ div#gallery-desktop figure img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media (min-width: 1750px) {
+  .img2 {
+    height: 700px;
   }
 }
 
