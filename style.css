@@ -539,6 +539,13 @@ div#gallery-desktop figure img {
   .img2 {
     height: 500px;
   }
+  .main-logo {
+    margin: 0px 15px 15px 35px;
+    width: 255px;
+  }
+  .container-fluid {
+    margin-top: 15px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -559,8 +566,8 @@ div#gallery-desktop figure img {
     margin-right: 5px;
   }
   .offer img {
-    height: 350px;
-    width: 550px;
+    height: 400px;
+    width: 600px;
   }
   .events-list .events-item {
     padding-left: 110px;
