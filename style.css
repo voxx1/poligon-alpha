@@ -415,12 +415,6 @@ div#gallery-desktop figure img {
   }
 }
 
-@media (min-width: 700px) {
-  .welcome-title {
-    font-size: 3rem;
-  }
-}
-
 @media (min-width: 701px) {
   .welcome-title {
     font-size: 2rem;
@@ -550,7 +544,7 @@ div#gallery-desktop figure img {
 
 @media (min-width: 1200px) {
   .carousel-caption {
-    top: 82%;
+    top: 55%;
   }
   .about {
     height: 450px;
@@ -580,6 +574,12 @@ div#gallery-desktop figure img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .welcome-p {
+    font-size: 2.5rem;
+  }
+  .welcome-title {
+    font-size: 3.5rem;
   }
 }
 
