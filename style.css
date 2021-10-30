@@ -582,7 +582,11 @@ div#gallery-desktop figure img {
     font-size: 3.5rem;
   }
 }
-
+@media (min-width: 1300px) {
+  .main-logo {
+    margin: 15px 15px 25px 45px;
+  }
+}
 @media (min-width: 1750px) {
   .img2 {
     height: 700px;
