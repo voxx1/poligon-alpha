@@ -273,8 +273,7 @@ a:hover {
 }
 
 .counter-items .counter-item {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin: 30px 15px 20px 15px;
 }
 
 .counter-items .counter-item i {
@@ -537,14 +536,18 @@ div#gallery-desktop figure img {
     margin: 0px 15px 15px 35px;
     width: 255px;
   }
+}
+@media (max-width: 1199px) {
+  .fixed-top {
+    position: static;
+  }
   .container-fluid {
     margin-top: 15px;
   }
 }
-
 @media (min-width: 1200px) {
   .carousel-caption {
-    top: 55%;
+    top: 75%;
   }
   .about {
     height: 450px;
@@ -581,6 +584,9 @@ div#gallery-desktop figure img {
   .welcome-title {
     font-size: 3.5rem;
   }
+  .carousel-item img {
+    height: 100vh;
+  }
 }
 @media (min-width: 1300px) {
   .main-logo {
@@ -597,6 +603,9 @@ div#gallery-desktop figure img {
   .wrapper {
     margin: 0 auto;
     width: 2000px;
+  }
+  .fixed-top {
+    position: static;
   }
 }
 /*# sourceMappingURL=style.css.map */
