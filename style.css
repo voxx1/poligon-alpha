@@ -34,8 +34,7 @@ a:hover {
 }
 
 .shadow-red {
-  -webkit-box-shadow: -20px 20px 0px 0px #d40101;
-          box-shadow: -20px 20px 0px 0px #d40101;
+  box-shadow: -25px 0px 0px -12px rgba(212, 1, 1, 1);
   padding: 10px;
   margin-bottom: 30px;
 }
@@ -123,7 +122,15 @@ a:hover {
   margin-top: 60px;
   margin-bottom: 40px;
 }
-
+.center-item {
+  color: #d40101;
+          line-height: 0.8;
+          text-align: center;
+          font-size: 55px;
+          font-family: 'fire';
+          margin-top: 60px;
+          margin-bottom: 40px;
+}
 .organise p {
   font-size: 20px;
   margin: 0 15px 40px 15px;
@@ -134,6 +141,10 @@ a:hover {
 }
 
 .organise .organise-item img {
+  height: 120px;
+  margin-bottom: 15px;
+}
+.organise .organise-item embed {
   height: 120px;
   margin-bottom: 15px;
 }
@@ -182,6 +193,12 @@ a:hover {
   margin: -40px 10px -40px 10px;
 }
 
+.galeria img {
+  height: 340px;
+  width: 450px;
+  margin: 30px 0;
+  
+}
 .events {
   margin-top: 35px;
   display: -webkit-box;
@@ -206,11 +223,14 @@ a:hover {
 }
 
 .events .events-item {
-  margin: 30px 30px;
+  margin: 30px 60px;
+  width: 50%;
   padding: 18px;
-  border: 2px solid #d40101;
+  box-shadow: 0px 11px 32px -14px rgba(66, 68, 90, 1);
 }
-
+.reverse {
+  flex-direction: row-reverse !important;
+}
 .events .events-item h4 {
   padding: 0 25px 0 25px;
 }
@@ -231,18 +251,37 @@ a:hover {
 
 .parallax {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+}
+
+.author {
+  text-transform: uppercase;
+  line-height: 1rem;
+  font-weight: 500;
+  padding: 0 30px;
+  letter-spacing: 2px;
+  font-size: 11px;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.author a {
+  text-decoration: none;
+  color: black;
+}
+
+.author a:hover {
+  color: red;
+}
+
+.author p {
+  margin-top: 10px;
 }
 
 .img1 {
   background-image: url("images/poligon3.jpg");
   height: 300px;
-  -o-object-fit: cover;
   object-fit: cover;
   background-position: center;
   background-size: cover;
@@ -341,7 +380,7 @@ a:hover {
 }
 
 .map {
-  width: 100%;
+  width: 90%;
   height: 300px;
   margin-top: 60px;
   margin-bottom: 50px;
@@ -411,10 +450,24 @@ div#gallery-desktop figure img {
     width: 360px;
   }
 }
-
+@media (max-width:500px) {
+  .galeria img {
+    width: 100%;
+  }
+}
 @media (max-width: 800px) {
   .offer-item {
     margin-bottom: 40px;
+  }
+  .reverse {
+    flex-direction: column !important;
+  }
+  .about img {
+    margin-top: 0 !important;
+  }
+  .events .events-item {
+    width: 90%;
+margin: 30px auto;    
   }
 }
 
@@ -429,12 +482,7 @@ div#gallery-desktop figure img {
 
 @media (min-width: 800px) {
   .about {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
     margin: 50px 30px;
   }
@@ -565,8 +613,16 @@ div#gallery-desktop figure img {
   }
   .about {
     height: 450px;
-    background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(80%, #fff), color-stop(80%, #d40101));
     background: linear-gradient(to right, #fff 0%, #fff 80%, #d40101 80%);
+  }
+  .reverse {
+    background: linear-gradient(to left, #fff 0%, #fff 80%, #d40101 80%);
+  
+
+  }
+  .reverse .shadow-red {
+    box-shadow: 25px 0px 0px -12px rgba(212, 1, 1, 1) !important;
+
   }
   .about img {
     width: 420px;
@@ -616,6 +672,10 @@ div#gallery-desktop figure img {
   }
   .carousel-item img {
     height: 100vh;
+  }
+  .galeria img:hover {
+    transform: scale(1.15);
+    transition: 0.2s ease-in-out;
   }
 }
 
